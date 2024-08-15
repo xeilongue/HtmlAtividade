@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel = "stylesheet" href="css/style.css">
+
+        <style>
+            .login-section {
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 30px;
+                border-radius: 8px;
+                max-width: 300px;
+                margin: 30px auto;
+                color: white;
+                text-align: center;
+            }
+    
+            .login-section h2 {
+                margin-bottom: 20px;
+            }
+    
+            .login-section label {
+                display: block;
+                margin-bottom: 10px;
+            }
+    
+            .login-section input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+    
+            .login-section button {
+                width: 100%;
+                padding: 10px;
+                background-color: #2b2d96;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            .login-section button:hover {
+                background-color: #1a1b8f;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>TREINAMENTO PARA O RADIANTE</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <p>
+        </p>
+
+        <section class="login-section">
+
+        <h2>Login</h2>
+
+        <form id="loginForm">
+            
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <button onclick = "mostrarAlerta()">Entrar</button>
+        </form>
+
+        </section>
+
+    </body>
+
+    <script>
+        function mostrarAlerta() {
+            alert("Cadastrado com sucesso!");
+        }
+    </script>
+
+</html>
